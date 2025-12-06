@@ -1,11 +1,15 @@
 # UsherJs
 Controlled assignment of CSS class for your UI elements
 
-## Usage
+## Info
 UsherJs only assigns CSS class based on your need. And it does things
 imperatively. You tell when to change and Usherjs will do it.
 
 Actual style / visibility change is in your able hands.
+
+## Usage
+Place `usher.js` file from this repo to your web server and point your website
+to it.
 
 ### ViewGroups
 ViewGroups allow you to control assignment of a CSS class name between members
