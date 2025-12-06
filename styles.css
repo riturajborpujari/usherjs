@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 11pt;
+  font-family: sans-serif;
+  color: #222222;
+  background-color: #eaeaea;
+}
+
+h1,h2,h3,h4,h5,h6,blockquote {
+  margin: 1rem 0;
+}
+
+blockquote {
+  border-left: 2px solid #28d;
+  padding-left: 1rem;
+}
+
+.logo {
+  font-weight: bold;
+  background-color: #28d;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.container {
+  display: flex;
+  align-items: start;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.padding-vertical {
+  padding: 1rem 0;
+}
+
+.shadow {
+  box-shadow: 0 0 1px #aaa;
+}
+
+.shadow-bottom {
+  box-shadow: 0 1px 0 #aaa;
+}
+
+.shadow-right {
+  box-shadow: 1px 0 0 #aaa;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.can-show {
+  display: none
+}
+
+.can-show.shown {
+  display: block
+}
+
+.can-activate {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.can-activate:hover {
+  color: #26a;
+}
+
+.can-activate.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.can-expand {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in;
+}
+
+.can-expand.expanded {
+  max-height: 152px;
+}
+
+.clickable {
+  cursor: pointer;
+  color: #2244dd;
+  text-decoration: underline;
+}
+.clickable :hover{
+  color: #28d;
+  text-decoration: underline;
+}

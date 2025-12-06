@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>UsherJs Example</title>
+         <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="padding shadow-bottom">
+            <div class="logo">
+                <span>UsherJs</span>
+            </div>
+        </header>
+        <div class="container">
+            <aside style="width: 15rem;" class="shadow-right">
+                <nav>
+                    <ul>
+                        <li id="link-1" class="can-activate padding"
+										onclick="Usher.ViewGroup.SelectMultiple([
+											['mainView', '#view-1'],
+											['navLinks', '#link-1']])">
+							Home</li>
+                        <li id="link-2" class="can-activate padding"
+										onclick="Usher.ViewGroup.SelectMultiple([
+											['mainView', '#view-2'],
+											['navLinks', '#link-2']])">
+							Idea</li>
+                        <li id="link-3" class="can-activate padding"
+										onclick="Usher.ViewGroup.SelectMultiple([
+											['mainView', '#view-3'],
+											['navLinks', '#link-3']])">
+							Implementation</li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="padding">
+                <div id="view-1" class="padding can-show">
+                    <h1>UsherJs</h1>
+                    <p>A simple library for controlling presentation of HTML elements</p>
+
+					<h2>Quickstart</h2>
+					<p>
+						<pre>
+						<code>
+						</code>
+						</pre>
+					</p>
+                </div>
+                <div id="view-2" class="padding can-show">
+                    <h1>Idea</h1>
+                    <blockquote>
+                        Dictionary defines <strong>Usher</strong> as ead or guide
+                        someone to a place, such as showing them to their
+                        seats in a theater or at an event. It can also refer to
+                        the act of introducing or marking the beginning of
+                        somthing.
+                    </blockquote>
+
+                    <p>
+                        Why use a complicated library for managing something
+                        trivial such as presentation of HTML elements. Can't a
+                        simple tool help us manage this
+                    </p>
+                </div>
+
+                <div id="view-3" class="padding can-show">
+                    <h1>Implementation</h1>
+                    <p>
+                        UsherJs handles presentation in a very simple manner.
+                        There are specific features available which needs to be
+                        initialized, and each feature allows specific functions
+                        to control the presentation.
+                    </p>
+
+                    <div class="padding-vertical">
+                      <div class="padding shadow">
+                        <span class="clickable" onclick="Usher.Toggle.Toggle('see-more')">See more</span>
+                        <div id="expandable-1" class="can-expand">
+                          <h2>Features</h2>
+                          <p>
+                              Below are the features implemented by UsherJs.
+                          </p>
+
+                          <h3>ViewGroups</h3>
+                          <p>
+                              ViewGroups control the visibility of elements in a
+                              group. Only one item is visible in a single group at a
+                              time.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+    <script src="/usher.js" type="text/javascript">
+    </script>
+    <script src="/script.js" type="text/javascript">
+    </script>
+</html>
